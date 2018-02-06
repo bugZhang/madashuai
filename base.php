@@ -35,5 +35,20 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/footer');
       wp_footer();
     ?>
+  <script>
+      jQuery('#mds-nav').headroom();
+//      jQuery('#mds-nav').headroom({
+//          "offset": 205,
+//          "tolerance": 5,
+//          "classes": {
+//              "initial": "animated",
+//              "pinned": "slideDown",
+//              "unpinned": "slideUp"
+//          }
+//      });
+//
+//      jQuery('#mds-nav').headroom('destroy');
+
+  </script>
   </body>
 </html>

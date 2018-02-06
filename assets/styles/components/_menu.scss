@@ -11,3 +11,18 @@
     color: #000 !important;
   }
 }
+.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .2s ease-in-out;
+}
+.headroom--unpinned {
+  top: -100px;
+  transform: translateY(-100%);
+}
+.headroom--pinned {
+  top: 0;
+  transform: translateY(0%);
+}
