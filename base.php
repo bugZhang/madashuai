@@ -20,14 +20,20 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="wrap container" role="document">
       <div class="content row">
+        <div class="col-md-2 mds-col-left"></div>
+        <div class="col-md-8 mds-col-middle">
         <main class="main">
           <?php include Wrapper\template_path(); ?>
+            <?php get_template_part('templates/pagination') ?>
         </main><!-- /.main -->
+        </div>
+          <div class="col-md-2 mds-col-right"></div>
         <?php if (Setup\display_sidebar()) : ?>
           <aside class="sidebar">
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
+        </div>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php
@@ -36,6 +42,13 @@ use Roots\Sage\Wrapper;
       wp_footer();
     ?>
   <script>
+
+      function asdfe(){
+          jQuery('.mds-col-left').removeClass('col-md-2').addClass('col-md-1');
+          jQuery('.mds-col-middle').removeClass('').addClass('');
+          jQuery('.mds-col-right').removeClass('col-md-2').addClass('col-md-3');
+      }
+
       jQuery('#mds-nav').headroom();
 //      jQuery('#mds-nav').headroom({
 //          "offset": 205,

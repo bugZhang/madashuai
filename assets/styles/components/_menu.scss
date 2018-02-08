@@ -11,6 +11,24 @@
     color: #000 !important;
   }
 }
+#mds-banner{
+  margin-bottom: 5em;
+}
+.navbar-nav{
+  margin: 0 auto;
+}
+
+#mds-nav{
+  border-bottom-width:1px;
+  border-bottom-style: solid;
+}
+
+@include media-breakpoint-up(md){
+  .menu-item{
+    margin-right: 1em;
+  }
+}
+
 .headroom {
   position: fixed;
   top: 0;

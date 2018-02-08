@@ -28,6 +28,11 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
  * Clean up the_excerpt()
  */
 function excerpt_more() {
-  return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
+  return '&hellip; <br/><div class="mt-2"><span class="post-read-more"><a href="' . get_permalink() . '">阅读全文 »</a></span></div>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
+
+function excerpt_length( $length ) {
+    return 200;
+}
+add_filter( 'excerpt_length', __NAMESPACE__ . '\\excerpt_length', 999 );

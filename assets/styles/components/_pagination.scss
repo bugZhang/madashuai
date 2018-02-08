@@ -1,0 +1,20 @@
+.mds-pagination ul.page-numbers{
+  @extend .pagination-sm;
+  @extend .pagination;
+}
+
+.mds-pagination li{
+  @extend .page-item;
+}
+.mds-pagination a.page-numbers, .mds-pagination span.page-numbers{
+  @extend .page-link;
+  color: #555;
+}
+
+.mds-pagination nav{
+  @extend .justify-content-center;
+}
+.mds-pagination .page-numbers.current{
+  color: #fff;
+  background-color: #9d9d9d;
+}
