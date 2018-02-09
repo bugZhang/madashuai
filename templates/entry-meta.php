@@ -10,7 +10,7 @@
         <i class="material-icons md-16 mr-1">view_list</i><?= get_the_category_list('、') ?>
     </span>
 
-    <? $tag_list = get_the_tag_list('<span class="badge badge-pill badge-light">',' ', '</span>'); ?>
+    <? $tag_list = get_the_tag_list('<span class="badge badge-pill badge-light">','</span> <span class="badge badge-pill badge-light">', '</span>'); ?>
     <? if($tag_list): ?>
     <span  class="post-meta-tags ml-1">
         <span class="post-meta-divider ml-1 mr-1">|</span>
