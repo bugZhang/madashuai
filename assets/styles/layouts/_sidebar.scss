@@ -1,0 +1,31 @@
+@include media-breakpoint-up(md){
+  .mds-toggle-sidbar{
+    z-index: $zindex-sticky;
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+    width: 15px;
+    height: 20px;
+    padding: 5px;
+    line-height: 2;
+    cursor: pointer;
+    color: #00f0ff;
+  }
+  .mds-sibebar{
+    z-index: $zindex-dropdown;
+    width: 320px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: inset 0 2px 6px #000;
+    background: #222;
+    -webkit-transform: translateZ(0);
+  }
+  .collapsing{
+    //@include transition($transition-base);
+    -webkit-transition: margin 0.3s ease;
+    -moz-transition: margin 0.3s ease;
+    transition: margin 0.3s ease;
+  }
+}

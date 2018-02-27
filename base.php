@@ -21,17 +21,17 @@ use Roots\Sage\Wrapper;
     <div class="wrap container" role="document">
       <div class="content row justify-content-center">
         <div class="col-md-8 mds-col-middle">
-            <main class="main">
+            <main class="">
               <?php include Wrapper\template_path(); ?>
                 <?php get_template_part('templates/pagination') ?>
             </main><!-- /.main -->
         </div>
-        <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
       </div><!-- /.content -->
+        <?php if (Setup\display_sidebar()) : ?>
+            <aside class="sidebar collapse mds-sibebar" id="collapseExample">
+                <?php include Wrapper\sidebar_path(); ?>
+            </aside><!-- /.sidebar -->
+        <?php endif; ?>
     </div><!-- /.wrap -->
     <?php
       do_action('get_footer');
@@ -40,10 +40,8 @@ use Roots\Sage\Wrapper;
     ?>
   <script>
 
-      function asdfe(){
-          jQuery('.mds-col-left').removeClass('col-md-2').addClass('col-md-1');
-          jQuery('.mds-col-middle').removeClass('').addClass('');
-          jQuery('.mds-col-right').removeClass('col-md-2').addClass('col-md-3');
+      function xianshishi(){
+          jQuery('.container .content').toggleClass('justify-content-center');
       }
 
       jQuery('#mds-nav').headroom();

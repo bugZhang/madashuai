@@ -1,3 +1,21 @@
+<?php
+
+use Roots\Sage\Setup;
+use Roots\Sage\Wrapper;
+
+?>
+<div class="mds-toggle-sidbar">
+    <i class="material-icons" onclick="xianshishi();"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">view_headline</i>
+    <i class="material-icons">arrow_upward</i>
+</div>
+
+<?php if (Setup\display_sidebar()) : ?>
+    <aside class="sidebar collapse mds-sibebar" id="collapseExample">
+        <?php include Wrapper\sidebar_path(); ?>
+    </aside><!-- /.sidebar -->
+<?php endif; ?>
+
+
 <footer class="content-info mds-footer">
   <div class="container">
     <?php dynamic_sidebar('sidebar-footer'); ?>
@@ -11,6 +29,6 @@
               </div>
           </div>
       </div>
-      
+
   </div>
 </footer>
