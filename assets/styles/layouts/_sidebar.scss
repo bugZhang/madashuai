@@ -1,4 +1,11 @@
 @include media-breakpoint-up(md){
+
+  $sidebar-width: 320px;
+
+  .container .content{
+    overflow-x: hidden;
+  }
+
   .mds-toggle-sidbar{
     z-index: $zindex-sticky;
     position: fixed;
@@ -11,21 +18,29 @@
     cursor: pointer;
     color: #00f0ff;
   }
-  .mds-sibebar{
+  .mds-content{
+    transition: margin 0.3s ease;
+  }
+  .mds-col-middle{
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mds-col-left{
+    margin-left: 0px;
+  }
+
+  .mds-sidebar{
     z-index: $zindex-dropdown;
-    width: 320px;
+    width: $sidebar-width;
     position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
     box-shadow: inset 0 2px 6px #000;
     background: #222;
-    -webkit-transform: translateZ(0);
-  }
-  .collapsing{
-    //@include transition($transition-base);
-    -webkit-transition: margin 0.3s ease;
-    -moz-transition: margin 0.3s ease;
     transition: margin 0.3s ease;
+  }
+  .collapsed{
+    margin-right: 0-$sidebar-width;
   }
 }
