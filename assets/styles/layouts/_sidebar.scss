@@ -1,6 +1,9 @@
 @include media-breakpoint-up(md){
 
   $sidebar-width: 320px;
+  $transition-nav: all 0.3s ease;
+  $transition-sidebar: margin 0.3s ease;
+  $transition-home: padding 0.3s ease;
 
   .container .content{
     overflow-x: hidden;
@@ -18,15 +21,17 @@
     cursor: pointer;
     color: #00f0ff;
   }
-  .mds-content{
-    transition: margin 0.3s ease;
+  .home{
+    @include transition($transition-home);
   }
-  .mds-col-middle{
-    margin-right: auto;
-    margin-left: auto;
+  .mds-collapse-home{
+    padding-right: $sidebar-width;
   }
-  .mds-col-left{
-    margin-left: 0px;
+  .mds-collapse-nav{
+    right: $sidebar-width;
+  }
+  #mds-nav{
+    @include transition($transition-nav);
   }
 
   .mds-sidebar{
@@ -38,9 +43,10 @@
     bottom: 0;
     box-shadow: inset 0 2px 6px #000;
     background: #222;
-    transition: margin 0.3s ease;
+    @include transition($transition-sidebar);
   }
   .collapsed{
     margin-right: 0-$sidebar-width;
   }
+
 }

@@ -19,7 +19,7 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="wrap container" role="document">
-      <div class="content row">
+      <div class="content row justify-content-center">
         <div class="col-md-8 mds-col-middle mds-content">
             <main class="">
               <?php include Wrapper\template_path(); ?>
@@ -29,7 +29,7 @@ use Roots\Sage\Wrapper;
       </div><!-- /.content -->
 
         <?php if (Setup\display_sidebar()) : ?>
-            <aside class="sidebar collapsed mds-sidebar col-md-4">
+            <aside class="sidebar collapsed mds-sidebar">
                 <?php include Wrapper\sidebar_path(); ?>
             </aside><!-- /.sidebar -->
         <?php endif; ?>
@@ -40,28 +40,7 @@ use Roots\Sage\Wrapper;
       wp_footer();
     ?>
   <script>
-
       window.$ = window.jQuery;
-
-      function xianshishi(){
-//          $('.container .content').toggleClass('justify-content-center');
-          $('.mds-content').toggleClass('mds-col-middle mds-col-left');
-          $('aside.sidebar').toggleClass('collapsed mds-sibebar');
-      }
-
-      jQuery('#mds-nav').headroom();
-//      jQuery('#mds-nav').headroom({
-//          "offset": 205,
-//          "tolerance": 5,
-//          "classes": {
-//              "initial": "animated",
-//              "pinned": "slideDown",
-//              "unpinned": "slideUp"
-//          }
-//      });
-//
-//      jQuery('#mds-nav').headroom('destroy');
-
   </script>
   </body>
 </html>

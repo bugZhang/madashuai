@@ -5,8 +5,8 @@ use Roots\Sage\Wrapper;
 
 ?>
 <div class="mds-toggle-sidbar">
-    <i class="material-icons" onclick="xianshishi();" role="button" aria-expanded="true">view_headline</i>
-    <i class="material-icons">arrow_upward</i>
+    <i class="material-icons" id="mds-toggle-sidebar" role="button" aria-expanded="true">view_headline</i>
+    <i class="material-icons" id="mds-upward">arrow_upward</i>
 </div>
 
 <footer class="content-info mds-footer">
