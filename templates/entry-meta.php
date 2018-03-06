@@ -12,13 +12,13 @@
 
     <?php $tag_list = get_the_tag_list('<span class="badge badge-pill badge-light">','</span> <span class="badge badge-pill badge-light">', '</span>'); ?>
 
-    <? if($tag_list): ?>
+    <?php if($tag_list): ?>
     <span  class="post-meta-tags ml-1">
         <span class="post-meta-divider ml-1 mr-1">|</span>
         <i class="material-icons md-16 ">loyalty</i>
         <?= $tag_list ?>
     </span>
-    <?endif;?>
+    <?php endif;?>
     
     <span  class="post-meta-count"></span>
 </span>

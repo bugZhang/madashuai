@@ -2,12 +2,13 @@
   <div class="container">
 
       <nav class="nav-primary fixed-top navbar navbar-expand-md navbar-light bg-light " id="mds-nav">
+          <a class="navbar-brand" href="/"><?=bloginfo('name') ?></a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <?php
-          $searchForm = '<form class="form-inline my-2 my-lg-0">' .
-              '<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">'.
+          $searchForm = '<form class="form-inline my-2 my-lg-0" action="/" method="get">' .
+              '<input class="form-control mr-sm-2" name="s" type="search" placeholder="Search" aria-label="Search">'.
               '<button class="btn btn-link my-2 my-sm-0" type="submit"><i class="material-icons">search</i></button>'.
               '</form>';
           if (has_nav_menu('primary_navigation')) :

@@ -4,7 +4,7 @@ use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
 
 ?>
-<div class="mds-toggle-sidbar">
+<div class="mds-toggle-sidbar d-sm-block d-none ">
     <i class="material-icons" id="mds-toggle-sidebar" role="button" aria-expanded="true">view_headline</i>
     <i class="material-icons" id="mds-upward">arrow_upward</i>
 </div>

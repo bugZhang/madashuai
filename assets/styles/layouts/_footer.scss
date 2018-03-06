@@ -17,10 +17,6 @@
   -webkit-animation: hue 5s infinite linear;
 }
 
-button{
-  -webkit-animation: hue 8s infinite linear;
-}
-
 @keyframes hue {
   from {
     -webkit-filter: hue-rotate(0deg);

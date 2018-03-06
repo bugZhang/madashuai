@@ -22,3 +22,14 @@ function title() {
     return get_the_title();
   }
 }
+
+function main_title(){
+
+    if(is_search()){
+        return '"' . get_search_query() . '"的查询结果：';
+    }elseif (is_tag()) {
+        return get_the_archive_title();
+    } else{
+        return '';
+    }
+}
