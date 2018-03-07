@@ -9,6 +9,7 @@
   "dependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-beta",
     "popper.js": "^1.12.3",
-    "headroom.js": "headroom-js#^0.9.4"
+    "headroom.js": "headroom-js#^0.9.4",
+    "components-font-awesome": "^5.0.6"
   }
 }

@@ -5,8 +5,8 @@ use Roots\Sage\Wrapper;
 
 ?>
 <div class="mds-toggle-sidbar d-sm-block d-none ">
-    <i class="material-icons" id="mds-toggle-sidebar" role="button" aria-expanded="true">view_headline</i>
-    <i class="material-icons" id="mds-upward">arrow_upward</i>
+    <span class="fas fa-bars fa-18 fa-fw"  id="mds-toggle-sidebar" role="button" aria-expanded="true"></span>
+    <span class="fas fa-arrow-up fa-18 fa-fw"  id="mds-upward"></span>
 </div>
 
 <footer class="content-info mds-footer">

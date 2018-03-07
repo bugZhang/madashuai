@@ -25,6 +25,10 @@
     line-height: 2;
     cursor: pointer;
     color: #cccccc;
+    span{
+      padding-top: .11em;
+      height: 1.25em;
+    }
   }
   .home{
     @include transition($transition-home);
@@ -68,4 +72,8 @@
     margin-right: 0-$sidebar-width;
   }
 
+}
+
+.widget_text p{
+  @extend .text-center;
 }

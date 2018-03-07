@@ -209,11 +209,18 @@ gulp.task('scripts', ['jshint'], function() {
 // ### Fonts
 // `gulp fonts` - Grabs all the fonts and outputs them in a flattened directory
 // structure. See: https://github.com/armed/gulp-flatten
+// gulp.task('fonts', function() {
+//   return gulp.src(globs.fonts)
+//     .pipe(flatten())
+//     .pipe(gulp.dest(path.dist + 'fonts'))
+//     .pipe(browserSync.stream());
+// });
+
 gulp.task('fonts', function() {
-  return gulp.src(globs.fonts)
-    .pipe(flatten())
-    .pipe(gulp.dest(path.dist + 'fonts'))
-    .pipe(browserSync.stream());
+    return gulp.src(globs.fonts)
+        .pipe(flatten())
+        .pipe(gulp.dest(path.dist + 'webfonts'))
+        .pipe(browserSync.stream());
 });
 
 // ### Images

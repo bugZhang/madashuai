@@ -9,7 +9,7 @@
           <?php
           $searchForm = '<form class="form-inline my-2 my-lg-0" action="/" method="get">' .
               '<input class="form-control mr-sm-2" name="s" type="search" placeholder="Search" aria-label="Search">'.
-              '<button class="btn btn-link my-2 my-sm-0" type="submit"><i class="material-icons">search</i></button>'.
+              '<button class="btn btn-link my-2 my-sm-0" type="submit"><i class="fas fa-search fa-18"></i></button>'.
               '</form>';
           if (has_nav_menu('primary_navigation')) :
               wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'navbar-nav mr-auto',

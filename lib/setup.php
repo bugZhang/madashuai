@@ -3,6 +3,7 @@
 namespace Roots\Sage\Setup;
 
 use Roots\Sage\Assets;
+use Roots\Sage\Customizer\WProfile;
 
 /**
  * Theme setup
@@ -59,8 +60,8 @@ function widgets_init() {
     'id'            => 'sidebar-primary',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>'
   ]);
 
   register_sidebar([
@@ -68,9 +69,12 @@ function widgets_init() {
     'id'            => 'sidebar-footer',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h3>',
-    'after_title'   => '</h3>'
+    'before_title'  => '<h5>',
+    'after_title'   => '</h5>'
   ]);
+
+  register_widget(WProfile::class);
+
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
