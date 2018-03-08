@@ -29,7 +29,9 @@ function main_title(){
         return '"' . get_search_query() . '"的查询结果：';
     }elseif (is_tag()) {
         return get_the_archive_title();
-    } else{
+    }elseif (is_archive()) {
+        return get_the_archive_title();
+    }  else{
         return '';
     }
 }
